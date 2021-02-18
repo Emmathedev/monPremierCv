@@ -1,6 +1,10 @@
 * {
     font-family: 'newsreader';
 }
+body, html {
+    height: 100%;
+    margin: 0;
+}
 #header {
     width: 100%;
     height: 200px;
@@ -18,19 +22,20 @@ header div {
 
 .intro {
     display: flex;
-    width: 400px;
+    width: 500px;
     height: 150px;
     background-color: white;
-    border: 4px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     text-transform: uppercase;
     flex-direction: column;
     padding: auto;
+    margin-left: -50px;
 }
 
 h1, p {
     margin: auto;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /* Navigation */
@@ -49,8 +54,10 @@ nav ul {
 }
 
 nav li{
+    display: flex;
     margin-right: 15px;
     color: white;
+    margin-left: 100px;
 }
 
 nav a {
@@ -58,12 +65,14 @@ nav a {
     padding-bottom: 3px;
     text-decoration: none;
     color: white;
+    padding: 1px;
 }
 
 nav a:hover{
-    color: #222;
+    color: white;
     text-decoration:none;
-    background-color:white;
+    font-weight: bold;
+    font-size: 25px;
     }
 
 /*Présentation*/
@@ -71,20 +80,42 @@ section {
     height: 400px;
     width: 100%;
     border: 1px solid black;
+    justify-content: center;
+    text-align: center;
     
 }
 h2 {
     font-size: 1.8em;
-    font-weight: bold;
+    font-weight: bolder;
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
+    margin-bottom: 150px; 
 }
+
+img {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-left: 100px;
+    margin-top: -110px;
+}
+
 .me {
+    align-items: center;
     display: flex;
     justify-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    text-align: justify;
 }
+
+#comp img {
+    margin-top: -40px;
+    margin-left: 770px;
+    width: 300px;
+}
+
 div {
     height: 400px;
     width: 100%;
@@ -96,11 +127,7 @@ article {
     width: 100%;
     border: 1px solid black;
 }
-.portfolio {
-    height: 400px;
-    width: 100%;
-    border: 1px solid black;
-}
+
 footer {
     height: 400px;
     width: 100%;
